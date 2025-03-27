@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        
-    </div>
+    <main>
+        <div class="container">
+            <h1>Calculadora IMC</h1>
+            <div id="div-altura">
+                <label for="altura">Altura(M):</label>
+                <input type="text" id="altura" placeholder="Ex: 1.80">
+            </div>
+            <div id="div-peso">
+                <label for="peso">Peso (Kg):</label>
+                <input type="text" id="peso" placeholder="Ex:70">
+            </div>
+            <div id="div-calculo">
+                <button id="calcular">Calcular</button>
+            </div>
+            <div class="containerSpan">
+                <span id="resultado">
+                    Seu IMC é:
+                </span>
+                <span id="classificacao">
+                    .
+                </span>
+            </div>
+        </div>
+    </main> 
+    <script src="script.js"></script>
 </body>
 </html>
